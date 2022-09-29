@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-node';
 import preprocess from 'svelte-preprocess';
 
 
@@ -9,12 +9,7 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {		
-		adapter: adapter({
-			// default options are shown
-			pages: 'build',
-			assets: 'build',
-			fallback: null
-		})
+		adapter: adapter({ out: 'my-output-directory' })
 	}
 };
 
