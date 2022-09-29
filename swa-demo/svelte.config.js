@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-node';
+import azure from 'svelte-adapter-azure-swa';
 import preprocess from 'svelte-preprocess';
 
 
@@ -9,7 +9,7 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {		
-		adapter: adapter({ out: 'my-output-directory' })
+		adapter: azure()
 	}
 };
 
