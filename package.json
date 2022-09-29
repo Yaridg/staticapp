@@ -37,7 +37,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@azure/static-web-apps-cli": "^1.0.2",
-		"dotenv": "^16.0.1"
+		"@azure/static-web-apps-cli": "^1.0.2"		
 	}
 }
