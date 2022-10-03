@@ -1,0 +1,1 @@
+const r=n=>{let e=[];for(const[o,t]of Object.entries(n))e=[...e,t];return e},a=async(n,e)=>{let o;return await fetch(e,{method:"POST",body:JSON.stringify(n),headers:{"Content-Type":"application/json",Accept:"application/json"}}).then(t=>t.json()).then(t=>{o=t}),o};export{r as d,a as g};
